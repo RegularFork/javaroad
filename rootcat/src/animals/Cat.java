@@ -15,7 +15,7 @@ public class Cat {
 
     @Override
     public String toString() {
-        return String.format("%s I Am a cat %s", catSaid(), this.name);
+        return String.format("Object info: This is a cat named %s", this.name);
     }
 
     private String catSaid() {
@@ -26,7 +26,7 @@ public class Cat {
         return this.name;
     }
 
-    public void changeNameTo(String newName) {
-        this.name = newName;
+    public void setNewName(String name) {
+        this.name = name;
     }
 }

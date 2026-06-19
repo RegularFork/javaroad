@@ -1,16 +1,19 @@
 import animals.Cat;
+import utilities.StringJob;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
 
-        Cat cat1 = new Cat("Murka");
-        cat1.action();
-        System.out.println(cat1);
+
+    public static void main(String[] args) {
+
+        try (StringJob stringJob = new StringJob()) {
+            String someName = stringJob.createName();
+            Cat cat1 = new Cat(someName);
+            cat1.action();
+            System.out.println(cat1);
+        }
 
         System.out.println("End of app");
     }
+
 }
