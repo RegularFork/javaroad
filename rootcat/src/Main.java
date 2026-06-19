@@ -12,6 +12,6 @@ public class Main {
             System.out.println("i = " + i);
         }
 
-        System.out.println("End");
+        System.out.println("End of app");
     }
 }
