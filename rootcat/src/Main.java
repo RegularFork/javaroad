@@ -4,7 +4,7 @@ import utilities.StringJob;
 public class Main {
 
 
-    public static void main(String[] args) {
+    public static void main(String ...args) {
 
         try (StringJob stringJob = new StringJob()) {
             String someName = stringJob.createName();
